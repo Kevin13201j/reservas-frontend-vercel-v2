@@ -61,7 +61,7 @@ export default function Home() {
       {/* Contenido principal */}
       <div style={{ maxWidth: '800px', margin: '0 auto', padding: '2rem', textAlign: 'center' }}>
         {/* Título movido aquí */}
-        <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold', marginBottom: '1rem' }}>Sistema de Reseñas ✨</h1>
+        <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold', marginBottom: '1rem' }}>Sistema de Reseñas </h1>
 
         <p style={{ fontSize: '1.2rem', marginBottom: '2rem' }}>
           Consulta y administra reseñas de clientes
