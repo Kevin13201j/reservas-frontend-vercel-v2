@@ -3,7 +3,7 @@ name: Deploy to Vercel
 on:
   push:
     branches:
-      - main  # o la rama que uses
+      - main
 
 jobs:
   deploy:
@@ -18,5 +18,8 @@ jobs:
       - name: Build del proyecto
         run: npm run build
 
+      - name: Vercel Pull (configura el entorno)
+        run: npx vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+
       - name: Desplegar a Vercel
-        run: npx vercel --prod --token ${{ secrets.VERCEL_TOKEN }}
+        run: npx vercel --prod --token=${{ secrets.VERCEL_TOKEN }}
