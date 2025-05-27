@@ -69,7 +69,7 @@ export default function Home() {
 
         {/* Formulario */}
         <div style={{ marginBottom: '2rem' }}>
-          <h2 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}> Nueva Reseña 📝</h2>
+          <h2 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>📝 Nueva Reseña 📝</h2>
           <form onSubmit={enviarResena} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
             <input type="text" placeholder="Nombre del cliente" value={cliente} onChange={(e) => setCliente(e.target.value)} required style={inputEstilo} />
             <textarea placeholder="Comentario" value={comentario} onChange={(e) => setComentario(e.target.value)} required rows={3} style={inputEstilo} />
@@ -80,7 +80,7 @@ export default function Home() {
 
         {/* Reseñas */}
         <div style={{ marginBottom: '2rem' }}>
-          <h2 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>📋 Reseñas Registradas</h2>
+          <h2 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>📋 Reseñas Registradas 📋 </h2>
           <ul style={{ listStyle: 'none', padding: 0 }}>
             {reviews.length === 0 && <p>No hay reseñas registradas.</p>}
             {reviews.map((r, i) => (
